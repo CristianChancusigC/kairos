@@ -1,0 +1,37 @@
+# === General / OS / IDEs ===
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# === Variables de entorno y secretos ===
+.env
+.env.*
+!.env.example
+
+# === Datos financieros locales (NUNCA subir PDFs o extractos reales) ===
+*.pdf
+!docs/samples/synthetic_*.pdf
+*.csv
+*.xlsx
+
+# === Backend (Python / FastAPI) ===
+backend/.venv/
+backend/venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# === Frontend (Angular 21 / Node) ===
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/coverage/
+npm-debug.log*
