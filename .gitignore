@@ -37,4 +37,4 @@ frontend/coverage/
 npm-debug.log*
 
 # === Rutas especificas ===
-docs/product/comandos_git.md
+docs/product/comandos_proyecto.md
