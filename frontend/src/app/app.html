@@ -1,0 +1,13 @@
+<main style="padding: 2rem; font-family: sans-serif;">
+  <h1>{{ title() }}</h1>
+
+  @if (healthService.health(); as h) {
+    <p>API: <strong>{{ h.status }}</strong> | Base de datos: <strong>{{ h.database }}</strong></p>
+  } @else if (healthService.error(); as err) {
+    <p style="color: red;">{{ err }}</p>
+  } @else {
+    <p>Conectando con el backend...</p>
+  }
+
+  <router-outlet />
+</main>
