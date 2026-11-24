@@ -1,10 +1,11 @@
 name: Kairos CI
 
 on:
-  push:
-    branches: [develop, main]
-  pull_request:
-    branches: [develop, main]
+  workflow_dispatch:
+#   push:
+#     branches: [develop, main]
+#   pull_request:
+#     branches: [develop, main]
 
 jobs:
   backend-check:
