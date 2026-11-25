@@ -10,6 +10,7 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
+from src.adapters.outbound.persistence import models  # noqa: F401
 from src.adapters.outbound.persistence.db import Base
 from src.config import settings
 
